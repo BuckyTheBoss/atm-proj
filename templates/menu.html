@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">ATM - Menu</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-4">
+        <div class="card mt-5">
+          <div class="card-header">
+            <h5 class="text-center">Pick an option</h5>
+          </div>
+
+          <div class="card-body">
+            <label>Account Number</label>
+            <h6># {{ account.account_number }}</h6>
+
+            <label class="mt-4">Account Balance</label>
+            <h6 class="pb-4">${{ account.balance }}</h6>
+            
+
+            <a href="{{url_for('withdrawal')}}" class="btn btn-outline-danger btn-block mt-4">withdrawal</a>
+
+            <a href="{{url_for('deposit')}}" class="btn btn-outline-success btn-block mt-4">deposit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

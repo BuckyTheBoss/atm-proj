@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">ATM - Welcome</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-4">
+        <div class="card mt-5">
+          <div class="card-header">
+            <h5 class="text-center">Account Credentials</h5>
+          </div>
+
+          <div class="card-body">
+            <form method="POST" action="/">
+              <label>Account Number</label>
+              <input class="form-control" type="text" name="account-number">
+
+              <label class="mt-4">PIN</label>
+              <input class="form-control" type="password" name="pin">
+
+              <button type="submit" class="btn btn-outline-primary btn-block mt-4">done</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

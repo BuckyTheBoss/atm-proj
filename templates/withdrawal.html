@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="/">ATM - Withdrawal</a>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-4">
+        <div class="card mt-5">
+          <div class="card-header">
+            <h5 class="text-center">Withdraw</h5>
+          </div>
+
+          <div class="card-body">
+            <form method="POST" action="{{url_for('withdrawal')}}">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" name="amount">
+              </div>
+              <button type="submit" class="btn btn-outline-danger btn-block mt-4">withdraw</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
